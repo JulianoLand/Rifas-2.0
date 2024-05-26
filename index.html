@@ -9,179 +9,44 @@
     <title>Rifas</title>
 </head>
 <body>
+    
     <div class="modal">
+        <!-- Input da imagem -->
+        <h1>Faça você mesmo suas Rifas</h1>
+        <label class="picture" for="picture__input">
+            <span class="picture__image">Escolha a imagem</span>
+        </label>
+        <input type="file" accept="image/*" id="picture__input" />
+
+        <!-- area de numeração -->
         <div class="fundoModal">
-            <label>Numero que parou: </label><input id="nParou" type="number">
-            <p class="avisoN hidden">Digite um valor!</p>
-            <label>Quantidade de rifas: </label><input id="qtdRifas" type="number">
+            <label>Numero que parou: </label>
+            <input id="nParou" type="number">
+            <p class="avisoN hidden">Caso não tenha iniciado ainda digite "0"</p>
+            <label>Quantidade de rifas: </label>
+            <input id="qtdRifas" type="number">
             <p class="avisoQdt hidden">Digite um valor!</p>
             <input id="btnModal" class="btn" type="submit" value="Gerar">
         </div>
     </div>
-    <div class="hidden">
+
+
+    <div class="hidden" id="pageMain">
         <div class="btnPDF">
             <button id="generate-pdf">Gerar PDF</button>
         </div>
         <div id="content">
             <div class="container">
-                <img src="imgRifa.png" alt="fundo">
+                <img id="imgFundo" src="" alt="fundo">
                 <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
-                </div>
-            </div>
-            <div class="container">
-                <img src="imgRifa.png" alt="fundo">
-                <div class="num">
-                    <p class="numCanP">Nº: 0000</p>
-                    <p class="numCan">Nº: 0000</p>
+                    <div class="group">
+                        <p>Nº:</p>
+                        <p class="numCanP">0000</p>
+                    </div>
+                    <div class="group">
+                        <p>Nº:</p>
+                        <p class="numCan">0000</p>
+                    </div>
                 </div>
             </div>
         </div>
